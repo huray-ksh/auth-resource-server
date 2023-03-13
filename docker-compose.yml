@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password1!
+      MYSQL_DATABASE: 'hyuuny'
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"

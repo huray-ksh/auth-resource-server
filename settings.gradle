@@ -1,0 +1,6 @@
+rootProject.name = 'auth-resource-server'
+
+include 'core'
+include 'app'
+include 'admin'
+
